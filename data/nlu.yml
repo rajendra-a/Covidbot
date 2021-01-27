@@ -1,0 +1,161 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey, helios
+    - hello
+    - hi, helios
+    - hello there
+    - good morning
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning, helios
+    - goodevening
+    - good afternoon
+    - hii
+    - hoi
+    - ho
+    - hello helios
+    - hi helios
+    - yeah helios
+    - hi
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - yes. please
+    - yes, I would
+    - yup
+    - yep
+    - that's great
+    - yeah
+    - y
+    - indeed
+    - of course
+    - sure
+    - that sounds good
+    - correct
+    - yes thanks
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no, thanks
+    - please no
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - is this bot
+- intent: out_of_scope
+  examples: |
+    - what is the square root of 5
+    - I want to know weather
+    - what is the meaning of life
+    - fridge isn't Running
+    - my tv is'nt working
+    - I want a pizza
+    - my washing machine isn't working
+    - what year is it
+    - I want to order pizza
+    - what is the weather today
+    - what is the weather
+- intent: inform
+  examples: |
+    - name is [rajendra](username) email is [rajendra@ysybserzen.com](email-address) phone is [4344432432](phone-number)
+    - my name is [shiva](username) email is [rajendra@gmail.com](email-address) phone is [8934548686](phone-number)
+    - name [surya](username) and email is [rajendra@outlook.com](email-address) phone is [9054347523](phone-number)
+    - i am [venkat](username) email [shiva@aol.com](email-address) and phone [7367543476](phone-number)
+    - this is [vamsi](username) email is [vamsi@wolkensoftware.com](email-address) phone is [6743239876](phone-number)
+    - iam [Rajendra](username) and my email is [shiva@yahoo.com](email-address) and my phone is [6356844532](phone-number)
+    - name [surya](username) email [surya@rediffmail.com](email-address) phone [8745453434](phone-number)
+    - email [mukesh@leo.com](email-address) and phone [7657745567](phone-number) and name [teja](username)
+    - phone [4545343345](phone-number) email [sekhar@tcs.in](email-address) name [ashok](username)
+    - email [tejaswi@infinatesolutions.com](email-address) name [tejaswi](username) phone [7878765634](phone-number)
+    - phone [9088945434](phone-number) name [mastan](username) email [mastan@techwave.in](email-address)
+    - name is [rajendra](username) email [rajendra@gmail.com](email-address) phone [7386528936](phone-number)
+    - [rajendra](username) [rajendra@syberzen.com](email-address) [7386528936](phone-number)
+    - name [rajendra](username) email [rajendra@gmail.com](email-address) phone [8979788998](phone-number)
+    - [rajendra](username) reddy [rajendra@syberzen.com](email-address) [8989987609](phone-number)
+    - [rajendra](username) [rajendrarddy@gmail.com](email-address) [9050450444](phone-number)
+    - [rajendra](username) [rejan@syberzen.com](email-address) [8554545453](phone-number)
+    - [venkat](username) [venkat@wolkensoftware.com](email-address) [8998955435](phone-number)
+    - [rajendra](username) [rajendra@syberzen.com](email-address) [9854549543](phone-number)
+    - [rajendra](username) [rajendra@syberzen.com](email-address) [8585945433](phone-number)
+    - [8989893465](phone-number)
+    - [rajendra@gmail.com](email-address)
+- intent: name
+  examples: |
+    - my name is [rajendra](name)
+    - name is [vamsi](name)
+    - name [surya](name)
+    - iam [shiva](name)
+    - [rajendra](username)
+- intent: age_sex
+  examples: |
+    - 60, female
+    - 23, male
+    - 39, female
+    - 55, female
+    - 76, male
+    - 24,  male
+    - 34, male
+    - 56, male
+- intent: Male
+  examples: |
+    - Male
+    - m
+    - male
+    - M
+- intent: Female
+  examples: |
+    - Female
+    - f
+    - female
+    - F
+- intent: address_phone
+  examples: |
+    - [8-3-644/1, keerthi apartments, tawakkal nagar, yellareddyguda, hyderabad, telangana](address), 9054545454(phone)
+    - [8-3-644/1, keerthi apartments, tawakkal nagar, yellareddyguda, hyderabad](address), [8904545445](phone)
+    - [8656-45/3, new age colony, jai hind colony , hyderabad](address), [8976546798](phone)
+    - [84-98, nethaji nagar, btm layout, banglore](address), [9876568987](phone)
+    - [7-67-98, sattava plots, river front, star bazaar, gujarat](address), [9876699768](phone)
+- intent: explain
+  examples: |
+    - why need username
+    - why do need that
+    - why
+    - for what
+    - to do what
+    - why do you need that
+    - why so
+    - why you need mobile number
+    - why mobile
+    - why email
+    - for what purpose
+- regex: age
+  examples: |
+    - \d{2}
+- regex: email-address
+  examples: |
+    - ^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$

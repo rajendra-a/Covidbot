@@ -1,0 +1,153 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- out_of_scope
+- utter_ask_user_form
+- username
+- explain
+- age_sex
+- age
+- address_phone
+- address
+- name
+- Female
+- Male
+- inform
+entities:
+- name
+- email-address
+- address
+- phone
+- age
+- sex
+- username
+- phone-number
+slots:
+  address:
+    type: text
+    influence_conversation: true
+  email-address:
+    type: text
+    influence_conversation: true
+  name:
+    type: text
+    influence_conversation: true
+  phone:
+    type: text
+    influence_conversation: true
+  phone-number:
+    type: text
+    influence_conversation: true
+  requested_slot:
+    type: text
+    influence_conversation: true
+  username:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Hello, Welcome to virtual covid rescan center, My name is helios
+  utter_ask_name:
+  - text: Can i know your name please
+  utter_ask_age_sex:
+  - text: Hi {name}, What is your age & sex
+  utter_sex:
+  - buttons:
+    - payload: /male
+      title: Male
+    - payload: /female
+      title: Female
+    text: Please select Gender
+  utter_ask_address_phone:
+  - text: Thank you , Can i know Your address and phone number
+  utter_thank_address:
+  - text: Thanks for giving me into, let's start the covid-19 symptos check, please
+      submit your body feelings
+  utter_ask_cold_fever_cough:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: Do you have cold, fever , cough
+  utter_ask_soar_throat:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: soar throat
+  utter_ask_myilgia:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: Myilgia
+  utter_ask_travelling:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: Please help me to understand more, Have been travelled outside in the past
+  utter_thanks_for_data:
+  - text: thanks for providing covid 19 checking details
+      14 days
+  utter_ask_covid_contact:
+  - buttons:
+    - payload: /affirm
+      title: yes
+    - payload: /deny
+      title: No
+    text: Thank you, How about you expose towords covid confirm case
+  utter_confirm:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: Please confirm your username is {username}, email {email-address} and phone
+      {phone-number}
+  utter_goodbye:
+  - text: Thank you, Bye
+  utter_iamabot:
+  - text: I am helios.
+  utter_explain_username:
+  - text: we need username to call you with a name
+  utter_ask_username:
+  - text: can i know your name please
+  utter_explain_email:
+  - text: we want to send a mail about us to know precisely
+  utter_ask_email:
+  - text: Please provide email.
+  utter_explain_phone:
+  - text: we can connect in a mean time.
+  utter_ask_phone:
+  - text: please provide phone number
+forms:
+  user_form:
+    address:
+    - entity: address
+      type: from_entity
+    age:
+    - entity: age
+      type: from_entity
+    email-address:
+    - entity: email
+      type: from_entity
+    name:
+    - entity: name
+      type: from_entity
+    phone:
+    - entity: phone
+      type: from_entity
+    sex:
+    - entity: sex
+      type: from_entity
