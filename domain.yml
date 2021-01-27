@@ -98,8 +98,7 @@ responses:
       title: No
     text: Please help me to understand more, Have been travelled outside in the past
   utter_thanks_for_data:
-  - text: thanks for providing covid 19 checking details
-      14 days
+  - text: thanks for providing covid 19 checking details 14 days
   utter_ask_covid_contact:
   - buttons:
     - payload: /affirm

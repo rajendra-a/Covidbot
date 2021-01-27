@@ -3,7 +3,6 @@ stories:
 - story: Covid happy path
   steps:
   - action: utter_greet
-  - intent: greet
   - action: utter_ask_name
   - intent: name
   - action: utter_ask_age_sex
@@ -24,7 +23,6 @@ stories:
 - story: Story from Conversation ID 1
   steps:
   - action: utter_greet
-  - intent: greet
   - action: utter_ask_name
   - intent: name
   - action: utter_ask_age_sex
@@ -37,15 +35,14 @@ stories:
   - action: utter_ask_soar_throat
   - intent: deny
   - action: utter_ask_myilgia
-  - intent: affirm
+  - intent: deny
   - action: utter_ask_travelling
-  - intent: affirm
+  - intent: deny
   - action: utter_ask_covid_contact
   - intent: deny
 - story: Story from Conversation ID 2
   steps:
   - action: utter_greet
-  - intent: greet
   - action: utter_ask_name
   - intent: name
   - action: utter_ask_age_sex
@@ -54,20 +51,19 @@ stories:
   - intent: address_phone
   - action: utter_thank_address
   - action: utter_ask_cold_fever_cough
-  - intent: deny
+  - intent: affirm
   - action: utter_ask_soar_throat
-  - intent: deny
+  - intent: affirm
   - action: utter_ask_myilgia
-  - intent: affirm
+  - intent: deny
   - action: utter_ask_travelling
-  - intent: affirm
+  - intent: deny
   - action: utter_ask_covid_contact
   - intent: deny
 
-- story: Story from Conversation ID 564b72ef96eb464bae14a85790d7f724
+- story: Story from Conversation ID 3
   steps:
   - action: utter_greet
-  - intent: greet
   - action: utter_ask_name
   - intent: name
   - action: utter_ask_age_sex
@@ -82,15 +78,14 @@ stories:
   - action: utter_ask_myilgia
   - intent: affirm
   - action: utter_ask_travelling
-  - intent: affirm
+  - intent: deny
   - action: utter_ask_covid_contact
-  - intent: affirm
+  - intent: deny
 
 
-- story: Story from Conversation ID 564b72ef96eb464bae14a85790d7f724
+- story: Story from Conversation ID 4
   steps:
   - action: utter_greet
-  - intent: greet
   - action: utter_ask_name
   - intent: name
   - action: utter_ask_age_sex
@@ -99,20 +94,18 @@ stories:
   - intent: address_phone
   - action: utter_thank_address
   - action: utter_ask_cold_fever_cough
-  - intent: deny
+  - intent: affirm
   - action: utter_ask_soar_throat
-  - intent: deny
+  - intent: affirm
   - action: utter_ask_myilgia
-  - intent: deny
+  - intent: affirm
   - action: utter_ask_travelling
   - intent: affirm
   - action: utter_ask_covid_contact
   - intent: deny
-
-- story: Story from Conversation ID 564b72ef96eb464bae14a85790d7f724
+- story: Story from Conversation ID 5
   steps:
   - action: utter_greet
-  - intent: greet
   - action: utter_ask_name
   - intent: name
   - action: utter_ask_age_sex
@@ -123,10 +116,71 @@ stories:
   - action: utter_ask_cold_fever_cough
   - intent: affirm
   - action: utter_ask_soar_throat
-  - intent: deny
+  - intent: affirm
   - action: utter_ask_myilgia
   - intent: affirm
   - action: utter_ask_travelling
   - intent: affirm
   - action: utter_ask_covid_contact
   - intent: affirm
+- story: Story from Conversation ID 5
+  steps:
+  - action: utter_greet
+  - action: utter_ask_name
+  - intent: name
+  - action: utter_ask_age_sex
+  - intent: age_sex
+  - action: utter_ask_address_phone
+  - intent: address_phone
+  - action: utter_thank_address
+  - action: utter_ask_cold_fever_cough
+  - intent: deny
+  - action: utter_ask_soar_throat
+  - intent: affirm
+  - action: utter_ask_myilgia
+  - intent: deny
+  - action: utter_ask_travelling
+  - intent: affirm
+  - action: utter_ask_covid_contact
+  - intent: affirm
+- story: Story from Conversation ID 5
+  steps:
+  - action: utter_greet
+  - action: utter_ask_name
+  - intent: name
+  - action: utter_ask_age_sex
+  - intent: age_sex
+  - action: utter_ask_address_phone
+  - intent: address_phone
+  - action: utter_thank_address
+  - action: utter_ask_cold_fever_cough
+  - intent: deny
+  - action: utter_ask_soar_throat
+  - intent: affirm
+  - action: utter_ask_myilgia
+  - intent: deny
+  - action: utter_ask_travelling
+  - intent: deny
+  - action: utter_ask_covid_contact
+  - intent: affirm
+
+- story: Story from Conversation ID 5
+  steps:
+  - action: utter_greet
+  - action: utter_ask_name
+  - intent: name
+  - action: utter_ask_age_sex
+  - intent: age_sex
+  - action: utter_ask_address_phone
+  - intent: address_phone
+  - action: utter_thank_address
+  - action: utter_ask_cold_fever_cough
+  - intent: deny
+  - action: utter_ask_soar_throat
+  - intent: affirm
+  - action: utter_ask_myilgia
+  - intent: deny
+  - action: utter_ask_travelling
+  - intent: affirm
+  - action: utter_ask_covid_contact
+  - intent: deny
