@@ -13,11 +13,8 @@ intents:
 - explain
 - age_sex
 - address_phone
-- Female
-- Male
 entities:
 - username
-- email-address
 - address
 - age
 - sex
@@ -30,9 +27,7 @@ slots:
   age:
     type: text
     influence_conversation: true
-  email-address:
-    type: text
-    influence_conversation: true
+  
   phone-number:
     type: text
     influence_conversation: true
@@ -117,21 +112,18 @@ responses:
   - text: please provide phone number
 forms:
   user_form:
-    address:
-    - entity: address
+    username:
+    - entity: username
       type: from_entity
     age:
     - entity: age
       type: from_entity
-    email-address:
-    - entity: email-address
-      type: from_entity
-    phone-number:
-    - entity: phone-number
-      type: from_entity
     sex:
     - entity: sex
       type: from_entity
-    username:
-    - entity: username
+    address:
+    - entity: address
+      type: from_entity
+    phone-number:
+    - entity: phone-number
       type: from_entity
