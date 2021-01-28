@@ -11,6 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-- rule: get user name at anytime
-  steps: 
-  - 
+
+- rule: when get address user get thanks and aske fever and cough details
+  steps:
+  - action: utter_thank_address
+  - action: utter_ask_cold_fever_cough

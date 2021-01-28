@@ -20,6 +20,8 @@ nlu:
     - hi helios
     - yeah helios
     - hi
+    - ji
+    - hi\
 - intent: goodbye
   examples: |
     - good afternoon
@@ -80,47 +82,27 @@ nlu:
     - I want to order pizza
     - what is the weather today
     - what is the weather
-- intent: inform
+- intent: username
   examples: |
-    - name is [rajendra](username) email is [rajendra@ysybserzen.com](email-address) phone is [4344432432](phone-number)
-    - my name is [shiva](username) email is [rajendra@gmail.com](email-address) phone is [8934548686](phone-number)
-    - name [surya](username) and email is [rajendra@outlook.com](email-address) phone is [9054347523](phone-number)
-    - i am [venkat](username) email [shiva@aol.com](email-address) and phone [7367543476](phone-number)
-    - this is [vamsi](username) email is [vamsi@wolkensoftware.com](email-address) phone is [6743239876](phone-number)
-    - iam [Rajendra](username) and my email is [shiva@yahoo.com](email-address) and my phone is [6356844532](phone-number)
-    - name [surya](username) email [surya@rediffmail.com](email-address) phone [8745453434](phone-number)
-    - email [mukesh@leo.com](email-address) and phone [7657745567](phone-number) and name [teja](username)
-    - phone [4545343345](phone-number) email [sekhar@tcs.in](email-address) name [ashok](username)
-    - email [tejaswi@infinatesolutions.com](email-address) name [tejaswi](username) phone [7878765634](phone-number)
-    - phone [9088945434](phone-number) name [mastan](username) email [mastan@techwave.in](email-address)
-    - name is [rajendra](username) email [rajendra@gmail.com](email-address) phone [7386528936](phone-number)
-    - [rajendra](username) [rajendra@syberzen.com](email-address) [7386528936](phone-number)
-    - name [rajendra](username) email [rajendra@gmail.com](email-address) phone [8979788998](phone-number)
-    - [rajendra](username) reddy [rajendra@syberzen.com](email-address) [8989987609](phone-number)
-    - [rajendra](username) [rajendrarddy@gmail.com](email-address) [9050450444](phone-number)
-    - [rajendra](username) [rejan@syberzen.com](email-address) [8554545453](phone-number)
-    - [venkat](username) [venkat@wolkensoftware.com](email-address) [8998955435](phone-number)
-    - [rajendra](username) [rajendra@syberzen.com](email-address) [9854549543](phone-number)
-    - [rajendra](username) [rajendra@syberzen.com](email-address) [8585945433](phone-number)
-    - [8989893465](phone-number)
-    - [rajendra@gmail.com](email-address)
-- intent: name
-  examples: |
-    - my name is [rajendra](name)
-    - name is [vamsi](name)
-    - name [surya](name)
-    - iam [shiva](name)
+    - my name is [rajendra](username)
+    - name is [vamsi](username)
+    - name [surya](username)
+    - iam [shiva](username)
     - [rajendra](username)
+    - [siva](username)
+    - venkat
 - intent: age_sex
   examples: |
-    - 60, female
-    - 23, male
-    - 39, female
-    - 55, female
-    - 76, male
-    - 24,  male
-    - 34, male
-    - 56, male
+    - [60](age), [female](sex)
+    - [23](age) [male](sex)
+    - [39](age), [female](sex)
+    - [55](age) [female](sex)
+    - [76](age), [male](sex)
+    - [24](age),  [male](sex)
+    - [34](age), [male](sex)
+    - [56](age) [male](sex)
+    - 27 male
+    - 27, male
 - intent: Male
   examples: |
     - Male
